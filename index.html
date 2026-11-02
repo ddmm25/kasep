@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الخطة التسويقية والإعلانية - شركة كاسب</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Cairo', sans-serif; 
+            background-color: #0b253a; /* 65% Petroleum Dark */
+            color: #f1f5f9; /* Light text for dark theme */
+        }
+        
+        /* Color themes & tokens */
+        .bg-petroleum { background-color: #0b253a; }
+        .text-petroleum { color: #0b253a; }
+        .border-petroleum { border-color: #0b253a; }
+        
+        /* Custom card background using the 20% light gray/off-white token adapted for dark layout, combined with petroleum nuances */
+        .content-card {
+            background-color: #132f45; /* Rich dark petroleum-gray tone */
+            border: 1px solid rgba(243, 156, 18, 0.2);
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+        }
+        .content-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 15px 30px -10px rgba(243, 156, 18, 0.25);
+            border-color: rgba(243, 156, 18, 0.6);
+        }
+
+        .inner-item {
+            background-color: #173853;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+        .inner-item:hover {
+            background-color: #1c4263;
+            transform: scale(1.01);
+        }
+
+        /* Animations & Motion */
+        @keyframes floatLogo {
+            0%, 100% { transform: translateY(0px) scale(1) rotate(0deg); }
+            50% { transform: translateY(-8px) scale(1.03) rotate(1deg); }
+        }
+        @keyframes pulseGlow {
+            0%, 100% { box-shadow: 0 0 20px rgba(243, 156, 18, 0.7); transform: scale(1); }
+            50% { box-shadow: 0 0 35px rgba(230, 126, 34, 0.95); transform: scale(1.08); }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes slideInRight {
+            from { opacity: 0; transform: translateX(40px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        .animate-float {
+            animation: floatLogo 3s ease-in-out infinite;
+        }
+        .animate-glow {
+            animation: pulseGlow 2.5s ease-in-out infinite;
+        }
+        .motion-fade-in {
+            animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+        .motion-slide-right {
+            animation: slideInRight 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        /* Accent highlights (12% Yellow & 3% Orange) */
+        .accent-border-yellow { border-right: 4px solid #f39c12; }
+        .accent-border-orange { border-right: 4px solid #e67e22; }
+        .text-yellow-accent { color: #f39c12; }
+        .text-orange-accent { color: #e67e22; }
+        .badge-yellow { background-color: #f39c12; color: #0b253a; }
+        .badge-orange { background-color: #e67e22; color: #ffffff; }
+    </style>
+</head>
+<body class="antialiased pb-20 overflow-x-hidden">
+
+    <!-- Header / Top Logo & Color Palette -->
+    <header class="bg-petroleum text-white shadow-2xl py-12 px-6 mb-12 relative overflow-hidden border-b border-amber-500/30 motion-fade-in">
+        <!-- Decorative glowing ambient background spheres -->
+        <div class="absolute -top-24 -right-24 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-orange-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto flex flex-col items-center text-center gap-6 relative z-10">
+            
+            <!-- Company Logo at Top Center (Square with curved edges, animated floating) -->
+            <a href="https://dg-craft.com/index.html" target="_blank" class="block animate-float focus:outline-none">
+                <div class="w-24 h-24 md:w-32 md:h-32 rounded-3xl overflow-hidden shadow-2xl border-4 border-amber-400 bg-white p-1 transition-transform hover:scale-110">
+                    <img src="https://i.ibb.co/M5k30hGM/b3d88775-4dd0-4ccf-ae34-ae20c23ff8da.jpg" alt="شركة كاسب" class="w-full h-full object-cover rounded-2xl" onerror="this.src='https://placehold.co/150x150/0b253a/ffffff?text=KASEB'" />
+                </div>
+            </a>
+
+            <div class="motion-fade-in" style="animation-delay: 0.2s;">
+                <span class="badge-yellow text-xs font-black px-4 py-1.5 rounded-full uppercase tracking-wider inline-block mb-3 shadow-md">مقدمة من شركة Digital Craft</span>
+                <h1 class="text-3xl md:text-5xl font-black tracking-tight text-white mb-2">الخطة التسويقية والإعلانية لشركة كاسب</h1>
+                <p class="text-amber-200/90 mt-2 text-sm md:text-base font-semibold">مدة الخطة: شهر واحد</p>
+            </div>
+
+            <!-- Color Distribution Bar -->
+            <div class="w-full max-w-3xl bg-[#132f45] border border-amber-500/30 p-5 rounded-3xl shadow-2xl mt-4 motion-fade-in" style="animation-delay: 0.4s;">
+                <span class="text-xs font-bold text-amber-400 block mb-3 uppercase tracking-wider">توزيع الألوان في الهوية</span>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-3 text-xs font-bold text-slate-200">
+                    <div class="bg-[#0b253a] p-3 rounded-2xl border border-slate-700 flex items-center justify-center gap-2 shadow">
+                        <span class="w-3.5 h-3.5 rounded-full bg-[#0b253a] border border-amber-400"></span>
+                        <span>65% درجات البترولي الداكن</span>
+                    </div>
+                    <div class="bg-[#0b253a] p-3 rounded-2xl border border-slate-700 flex items-center justify-center gap-2 shadow">
+                        <span class="w-3.5 h-3.5 rounded-full bg-slate-200"></span>
+                        <span>20% الأبيض والرمادي الفاتح</span>
+                    </div>
+                    <div class="bg-[#0b253a] p-3 rounded-2xl border border-slate-700 flex items-center justify-center gap-2 shadow">
+                        <span class="w-3.5 h-3.5 rounded-full bg-[#f39c12]"></span>
+                        <span class="text-amber-400">12% الأصفر</span>
+                    </div>
+                    <div class="bg-[#0b253a] p-3 rounded-2xl border border-slate-700 flex items-center justify-center gap-2 shadow">
+                        <span class="w-3.5 h-3.5 rounded-full bg-[#e67e22]"></span>
+                        <span class="text-orange-400">3% البرتقالي</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 space-y-12">
+
+        <!-- Section 1: Executive Summary -->
+        <section class="content-card p-8 rounded-3xl shadow-xl motion-fade-in" style="animation-delay: 0.3s;">
+            <h2 class="text-2xl font-black text-amber-400 mb-4 pb-2 border-b-2 border-amber-500/50 inline-block">أولاً: الملخص التنفيذي</h2>
+            <p class="text-slate-200 leading-relaxed text-base md:text-lg">
+                تهدف هذه الخطة إلى تعزيز الحضور الرقمي لشركة كاسب، وتوسيع مصادر الحصول على العملاء المحتملين من خلال تنويع القنوات الإعلانية وعدم الاعتماد على إعلانات Google فقط.<br><br>
+                تعتمد الاستراتيجية على استهداف الأفراد والشركات والجهات المهتمة بخدمات المقاولات والإنشاءات والتشطيبات، وتحويل اهتمامهم إلى طلبات فعلية للحصول على عروض أسعار أو الاستفسار عن تنفيذ المشاريع.<br><br>
+                وتشمل الخطة إدارة الحملات الإعلانية عبر Google Ads وInstagram وTikTok، مع تجهيز أدوات التحليل والتتبع لقياس الأداء وتحديد القنوات الأكثر فاعلية في جذب العملاء المحتملين.
+            </p>
+        </section>
+
+        <!-- Section 2: Marketing Goals -->
+        <section class="content-card p-8 rounded-3xl shadow-xl motion-fade-in" style="animation-delay: 0.4s;">
+            <h2 class="text-2xl font-black text-amber-400 mb-4 pb-2 border-b-2 border-amber-500/50 inline-block">ثانياً: الأهداف التسويقية</h2>
+            <p class="text-slate-300 mb-6 font-medium">تستهدف الخطة تحقيق مجموعة من الأهداف خلال الشهر الأول، وتشمل:</p>
+            <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-200">
+                <li class="inner-item p-4 rounded-2xl flex items-start gap-3 shadow-sm">
+                    <span class="w-2.5 h-2.5 mt-2 bg-amber-400 rounded-full flex-shrink-0 animate-pulse"></span>
+                    <span>زيادة عدد طلبات عروض الأسعار والاستفسارات الجادة.</span>
+                </li>
+                <li class="inner-item p-4 rounded-2xl flex items-start gap-3 shadow-sm">
+                    <span class="w-2.5 h-2.5 mt-2 bg-amber-400 rounded-full flex-shrink-0 animate-pulse"></span>
+                    <span>الوصول إلى العملاء الباحثين عن خدمات المقاولات العامة والإنشاءات.</span>
+                </li>
+                <li class="inner-item p-4 rounded-2xl flex items-start gap-3 shadow-sm">
+                    <span class="w-2.5 h-2.5 mt-2 bg-amber-400 rounded-full flex-shrink-0 animate-pulse"></span>
+                    <span>استهداف المهتمين بخدمات بناء العظم والتشطيبات والتجديد.</span>
+                </li>
+                <li class="inner-item p-4 rounded-2xl flex items-start gap-3 shadow-sm">
+                    <span class="w-2.5 h-2.5 mt-2 bg-amber-400 rounded-full flex-shrink-0 animate-pulse"></span>
+                    <span>توسيع قاعدة العملاء المحتملين من الأفراد والشركات.</span>
+                </li>
+                <li class="inner-item p-4 rounded-2xl flex items-start gap-3 shadow-sm">
+                    <span class="w-2.5 h-2.5 mt-2 bg-amber-400 rounded-full flex-shrink-0 animate-pulse"></span>
+                    <span>اختبار كفاءة Instagram وTikTok كقنوات إضافية لجذب العملاء.</span>
+                </li>
+                <li class="inner-item p-4 rounded-2xl flex items-start gap-3 shadow-sm">
+                    <span class="w-2.5 h-2.5 mt-2 bg-amber-400 rounded-full flex-shrink-0 animate-pulse"></span>
+                    <span>تحسين أداء حملات Google Ads من خلال تحليل الكلمات المفتاحية والاستهداف.</span>
+                </li>
+                <li class="inner-item p-4 rounded-2xl flex items-start gap-3 shadow-sm md:col-span-2">
+                    <span class="w-2.5 h-2.5 mt-2 bg-amber-400 rounded-full flex-shrink-0 animate-pulse"></span>
+                    <span>بناء قاعدة بيانات للعملاء المحتملين تساعد فريق المبيعات على المتابعة وتحويل الاستفسارات إلى فرص تعاقد.</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Section 3: Ad Campaigns Strategy -->
+        <section class="space-y-8 motion-fade-in" style="animation-delay: 0.5s;">
+            <h2 class="text-2xl font-black text-amber-400 border-b-2 border-amber-500/50 pb-2 inline-block">ثالثاً: استراتيجية الحملات الإعلانية</h2>
+            
+            <!-- 1. Google Ads -->
+            <div class="content-card p-8 rounded-3xl shadow-xl accent-border-yellow">
+                <h3 class="text-xl font-bold text-amber-300 mb-3">1. حملات Google Ads</h3>
+                <p class="text-slate-300 mb-4"><strong>الهدف:</strong> الوصول إلى العملاء الذين يبحثون بالفعل عن خدمات المقاولات والإنشاءات، واستهداف أصحاب النية الشرائية المرتفعة.</p>
+                <p class="text-slate-300 mb-4">سيتم الاعتماد على حملات البحث باعتبارها القناة الأساسية لجذب الطلب المباشر على خدمات الشركة.</p>
+                
+                <h4 class="font-bold text-white mb-2">تقسيم الحملات الإعلانية:</h4>
+                <ul class="space-y-2.5 mb-6 text-slate-200">
+                    <li class="inner-item p-3.5 rounded-xl">حملة المقاولات العامة: استهداف الباحثين عن شركات المقاولات والمقاولين العامين وتنفيذ المشاريع.</li>
+                    <li class="inner-item p-3.5 rounded-xl">حملة بناء العظم والهياكل: استهداف الباحثين عن بناء الفلل والمباني وتنفيذ الهياكل الإنشائية.</li>
+                    <li class="inner-item p-3.5 rounded-xl">حملة التشطيبات والتجديد: استهداف الباحثين عن تشطيب المنازل والفلل والشقق وأعمال الترميم والتجديد.</li>
+                    <li class="inner-item p-3.5 rounded-xl">حملة التسليم المفتاح: استهداف العملاء الراغبين في تنفيذ مشاريع متكاملة من مرحلة التخطيط وحتى التسليم.</li>
+                    <li class="inner-item p-3.5 rounded-xl">حملة تنسيق المواقع: استهداف الباحثين عن خدمات تنسيق المساحات الخارجية وتجهيز المواقع.</li>
+                </ul>
+
+                <h4 class="font-bold text-white mb-2">آلية التنفيذ:</h4>
+                <ul class="space-y-2 mb-6 text-slate-200">
+                    <li class="flex items-center gap-2">✓ تقسيم الحملات وفق الخدمات الرئيسية للشركة بدلاً من جمع جميع الخدمات في حملة واحدة.</li>
+                    <li class="flex items-center gap-2">✓ إجراء بحث عن الكلمات المفتاحية الأكثر ارتباطاً بخدمات الشركة.</li>
+                    <li class="flex items-center gap-2">✓ إعداد إعلانات مخصصة لكل خدمة مع إبراز المميزات التنافسية المناسبة.</li>
+                    <li class="flex items-center gap-2">✓ استهداف المدن والمناطق التي تغطيها الشركة فعلياً.</li>
+                    <li class="flex items-center gap-2">✓ توجيه الزوار إلى صفحات الخدمات المناسبة داخل الموقع.</li>
+                    <li class="flex items-center gap-2">✓ تفعيل إضافات الاتصال ووسائل التواصل وطلبات عروض الأسعار.</li>
+                    <li class="flex items-center gap-2">✓ مراجعة مصطلحات البحث بصورة مستمرة واستبعاد الكلمات غير المناسبة.</li>
+                    <li class="flex items-center gap-2">✓ متابعة أداء الحملات وتحسين الاستهداف والميزانيات وفق النتائج.</li>
+                </ul>
+
+                <h4 class="font-bold text-white mb-2">مؤشرات الأداء:</h4>
+                <ul class="space-y-1 text-slate-300">
+                    <li>• عدد الاستفسارات وطلبات عروض الأسعار.</li>
+                    <li>• تكلفة الحصول على العميل المحتمل.</li>
+                    <li>• معدل التحويل من النقر إلى الاستفسار.</li>
+                    <li>• جودة العملاء المحتملين ومدى توافقهم مع خدمات الشركة.</li>
+                </ul>
+            </div>
+
+            <!-- 2. Instagram Ads -->
+            <div class="content-card p-8 rounded-3xl shadow-xl border-right-4 border-right-pink-500" style="border-right-width: 4px; border-right-color: #ec4899;">
+                <h3 class="text-xl font-bold text-pink-300 mb-3">2. حملات Instagram</h3>
+                <p class="text-slate-300 mb-4"><strong>الهدف:</strong> تعزيز حضور الشركة وبناء الثقة من خلال عرض المشاريع والأعمال المنفذة، والوصول إلى عملاء محتملين جدد.</p>
+                <p class="text-slate-300 mb-4">سيتم استخدام Instagram كقناة تسويقية لعرض جودة التنفيذ والخدمات التي تقدمها الشركة، وتحفيز الجمهور على طلب الاستشارة أو عرض السعر.</p>
+
+                <h4 class="font-bold text-white mb-2">أنواع الحملات والمحتوى:</h4>
+                <ul class="space-y-2.5 mb-6 text-slate-200">
+                    <li class="inner-item p-3.5 rounded-xl">حملات الوصول والوعي بالعلامة التجارية.</li>
+                    <li class="inner-item p-3.5 rounded-xl">حملات الرسائل والاستفسارات عبر WhatsApp.</li>
+                    <li class="inner-item p-3.5 rounded-xl">عرض صور وفيديوهات المشاريع المنفذة.</li>
+                    <li class="inner-item p-3.5 rounded-xl">إبراز مراحل تنفيذ المشاريع من البداية حتى التسليم.</li>
+                    <li class="inner-item p-3.5 rounded-xl">محتوى قبل وبعد أعمال التشطيبات والتجديد.</li>
+                    <li class="inner-item p-3.5 rounded-xl">محتوى تعريفي بخدمات بناء العظم والتشطيبات والتسليم المفتاح.</li>
+                    <li class="inner-item p-3.5 rounded-xl">إبراز جودة الأعمال ودقة التنفيذ والاهتمام بالتفاصيل.</li>
+                </ul>
+
+                <h4 class="font-bold text-white mb-2">الجمهور المستهدف:</h4>
+                <ul class="space-y-1 mb-6 text-slate-300">
+                    <li>• المهتمون ببناء المنازل والفلل.</li>
+                    <li>• المقبلون على البناء أو التشطيب.</li>
+                    <li>• ملاك العقارات والمباني.</li>
+                    <li>• أصحاب المشاريع العقارية.</li>
+                    <li>• المهتمون بالتصميم الداخلي والتجديد.</li>
+                </ul>
+
+                <h4 class="font-bold text-white mb-2">آلية التنفيذ:</h4>
+                <ul class="space-y-2 text-slate-200">
+                    <li class="flex items-center gap-2">✓ إعداد حملات إعلانية وفق أهداف واضحة لكل حملة.</li>
+                    <li class="flex items-center gap-2">✓ اختبار أكثر من نموذج إعلاني من حيث المحتوى والصياغة والتصميم.</li>
+                    <li class="flex items-center gap-2">✓ استهداف الجمهور وفق المناطق الجغرافية والاهتمامات المناسبة.</li>
+                    <li class="flex items-center gap-2">✓ توجيه الجمهور إلى وسائل التواصل وطلب عروض الأسعار.</li>
+                    <li class="flex items-center gap-2">✓ تحليل نتائج الحملات وتحديد الإعلانات الأكثر فاعلية.</li>
+                </ul>
+            </div>
+
+            <!-- 3. TikTok Ads -->
+            <div class="content-card p-8 rounded-3xl shadow-xl" style="border-right: 4px solid #a855f7;">
+                <h3 class="text-xl font-bold text-purple-300 mb-3">3. حملات TikTok</h3>
+                <p class="text-slate-300 mb-4"><strong>الهدف:</strong> الوصول إلى شرائح جديدة من الجمهور من خلال محتوى مرئي قصير يعرض جودة التنفيذ والنتائج الفعلية للمشاريع.</p>
+                <p class="text-slate-300 mb-4">سيتم اختبار TikTok كقناة إضافية لجذب العملاء المحتملين، مع التركيز على المحتوى المرئي الذي يعكس خبرة الشركة وجودة أعمالها.</p>
+
+                <h4 class="font-bold text-white mb-2">أنواع المحتوى الإعلاني:</h4>
+                <ul class="space-y-2.5 mb-6 text-slate-200">
+                    <li class="inner-item p-3.5 rounded-xl">فيديوهات قصيرة لمراحل تنفيذ المشاريع.</li>
+                    <li class="inner-item p-3.5 rounded-xl">عرض الفرق بين الموقع قبل وبعد التنفيذ.</li>
+                    <li class="inner-item p-3.5 rounded-xl">جولات داخل المشاريع المنفذة.</li>
+                    <li class="inner-item p-3.5 rounded-xl">فيديوهات تعريفية بخدمات الشركة.</li>
+                    <li class="inner-item p-3.5 rounded-xl">محتوى يجيب عن الأسئلة الشائعة حول البناء والتشطيب.</li>
+                    <li class="inner-item p-3.5 rounded-xl">إبراز جودة الخامات ودقة التنفيذ والتفاصيل.</li>
+                </ul>
+
+                <h4 class="font-bold text-white mb-2">آلية الاختبار:</h4>
+                <ul class="space-y-2 text-slate-200">
+                    <li class="flex items-center gap-2">✓ إطلاق أكثر من نموذج إعلاني بأفكار مختلفة.</li>
+                    <li class="flex items-center gap-2">✓ اختبار الفيديوهات التعريفية مقارنة بفيديوهات عرض المشاريع.</li>
+                    <li class="flex items-center gap-2">✓ تجربة حملات الوصول وحملات جمع بيانات العملاء أو الرسائل بحسب الإمكانيات المتاحة.</li>
+                    <li class="flex items-center gap-2">✓ تقييم جودة الاستفسارات وليس عدد المشاهدات والتفاعلات فقط.</li>
+                    <li class="flex items-center gap-2">✓ تحديد مدى جدوى الاستمرار في المنصة بناءً على نتائج الاختبار.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Section 4: Budget Distribution -->
+        <section class="content-card p-8 rounded-3xl shadow-xl motion-fade-in">
+            <h2 class="text-2xl font-black text-amber-400 mb-4 pb-2 border-b-2 border-amber-500/50 inline-block">رابعاً: توزيع الميزانية الإعلانية المقترح</h2>
+            <p class="text-slate-300 mb-6">سيتم توزيع الميزانية الإعلانية مبدئياً وفق النسب التالية، مع إمكانية تعديلها بناءً على نتائج الحملات:</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+                <div class="inner-item p-6 rounded-2xl text-center shadow">
+                    <span class="text-4xl font-black text-amber-400 block mb-2">60%</span>
+                    <span class="font-bold text-white block">Google Ads</span>
+                </div>
+                <div class="inner-item p-6 rounded-2xl text-center shadow">
+                    <span class="text-4xl font-black text-pink-400 block mb-2">25%</span>
+                    <span class="font-bold text-white block">Instagram</span>
+                </div>
+                <div class="inner-item p-6 rounded-2xl text-center shadow">
+                    <span class="text-4xl font-black text-purple-400 block mb-2">15%</span>
+                    <span class="font-bold text-white block">TikTok</span>
+                </div>
+            </div>
+            <p class="text-slate-200 leading-relaxed">
+                يتم تخصيص الجزء الأكبر من الميزانية لحملات Google Ads بهدف استهداف الطلب المباشر على خدمات الشركة، بينما يتم تخصيص ميزانيات اختبارية لمنصتي Instagram وTikTok لتقييم قدرتهما على جذب عملاء محتملين جدد.<br><br>
+                وتتم مراجعة التوزيع بصورة دورية وفق تكلفة العميل المحتمل وجودة الاستفسارات والفرص البيعية الناتجة عن كل قناة.
+            </p>
+        </section>
+
+        <!-- Section 5: Analytics Tools -->
+        <section class="content-card p-8 rounded-3xl shadow-xl motion-fade-in">
+            <h2 class="text-2xl font-black text-amber-400 mb-4 pb-2 border-b-2 border-amber-500/50 inline-block">خامساً: إعداد أدوات التحليل وقياس الأداء</h2>
+            <p class="text-slate-200 mb-6 leading-relaxed">
+                سيتم تجهيز منظومة متكاملة لقياس أداء الحملات وتحليل سلوك الزوار، بهدف تحديد مصادر العملاء المحتملين وقياس كفاءة كل قناة إعلانية.
+            </p>
+            <h3 class="font-bold text-white mb-3">الأدوات المستخدمة:</h3>
+            <div class="flex flex-wrap gap-3 mb-6">
+                <span class="inner-item px-4 py-2.5 rounded-xl text-amber-300 text-sm font-semibold shadow">Google Analytics 4</span>
+                <span class="inner-item px-4 py-2.5 rounded-xl text-amber-300 text-sm font-semibold shadow">Google Tag Manager</span>
+                <span class="inner-item px-4 py-2.5 rounded-xl text-amber-300 text-sm font-semibold shadow">Google Ads Conversion Tracking</span>
+                <span class="inner-item px-4 py-2.5 rounded-xl text-amber-300 text-sm font-semibold shadow">Meta Pixel</span>
+                <span class="inner-item px-4 py-2.5 rounded-xl text-amber-300 text-sm font-semibold shadow">TikTok Pixel</span>
+                <span class="inner-item px-4 py-2.5 rounded-xl text-amber-300 text-sm font-semibold shadow">UTM Tracking</span>
+                <span class="inner-item px-4 py-2.5 rounded-xl text-amber-300 text-sm font-semibold shadow">Looker Studio</span>
+            </div>
+            <h3 class="font-bold text-white mb-3">الأحداث التي سيتم تتبعها:</h3>
+            <ul class="space-y-2 text-slate-200 mb-6">
+                <li class="inner-item p-3 rounded-xl">• إرسال نموذج طلب عرض سعر.</li>
+                <li class="inner-item p-3 rounded-xl">• الضغط على رقم الهاتف.</li>
+                <li class="inner-item p-3 rounded-xl">• الضغط على زر WhatsApp.</li>
+                <li class="inner-item p-3 rounded-xl">• إرسال طلب استشارة.</li>
+                <li class="inner-item p-3 rounded-xl">• زيارة صفحات الخدمات الرئيسية.</li>
+                <li class="inner-item p-3 rounded-xl">• التفاعل مع وسائل التواصل الخاصة بالشركة.</li>
+            </ul>
+            <p class="text-amber-200/80 text-sm italic">
+                سيتم اختبار جميع أحداث التتبع والتأكد من تسجيلها بصورة صحيحة قبل الاعتماد على بيانات التحويلات في تحسين الحملات الإعلانية.
+            </p>
+        </section>
+
+        <!-- Section 6: Framework -->
+        <section class="content-card p-8 rounded-3xl shadow-xl motion-fade-in">
+            <h2 class="text-2xl font-black text-amber-400 mb-4 pb-2 border-b-2 border-amber-500/50 inline-block">سادساً: إطار العمل وآلية التنفيذ</h2>
+            <p class="text-slate-300 mb-6">سيتم تنفيذ الخطة وفق أربع مراحل رئيسية:</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="inner-item p-6 rounded-2xl shadow">
+                    <span class="text-amber-400 font-bold text-xs uppercase tracking-wider block mb-1">المرحلة الأولى</span>
+                    <h3 class="font-bold text-white text-lg mb-3">التحليل والتجهيز</h3>
+                    <ul class="space-y-2 text-slate-200 text-sm">
+                        <li>• مراجعة الموقع الإلكتروني وصفحات الخدمات.</li>
+                        <li>• تحليل الحملات الإعلانية الحالية، إن وجدت.</li>
+                        <li>• دراسة الكلمات المفتاحية والمنافسين.</li>
+                        <li>• تحديد المناطق الجغرافية والجمهور المستهدف.</li>
+                        <li>• مراجعة وسائل التواصل وطرق استقبال الاستفسارات.</li>
+                        <li>• تجهيز أدوات التحليل والتتبع وقياس التحويلات.</li>
+                    </ul>
+                </div>
+                <div class="inner-item p-6 rounded-2xl shadow">
+                    <span class="text-amber-400 font-bold text-xs uppercase tracking-wider block mb-1">المرحلة الثانية</span>
+                    <h3 class="font-bold text-white text-lg mb-3">التأسيس والإطلاق</h3>
+                    <ul class="space-y-2 text-slate-200 text-sm">
+                        <li>• بناء هيكل الحملات الإعلانية لكل منصة.</li>
+                        <li>• إعداد الكلمات المفتاحية والاستهداف المناسب.</li>
+                        <li>• كتابة النصوص الإعلانية وتجهيز المواد الإبداعية.</li>
+                        <li>• إعداد حملات Google Ads وInstagram وTikTok.</li>
+                        <li>• ربط الحملات بأهداف التحويل.</li>
+                        <li>• اختبار النماذج ووسائل التواصل والتأكد من كفاءة استقبال الاستفسارات.</li>
+                    </ul>
+                </div>
+                <div class="inner-item p-6 rounded-2xl shadow">
+                    <span class="text-amber-400 font-bold text-xs uppercase tracking-wider block mb-1">المرحلة الثالثة</span>
+                    <h3 class="font-bold text-white text-lg mb-3">الاختبار والتحسين</h3>
+                    <ul class="space-y-2 text-slate-200 text-sm">
+                        <li>• متابعة نتائج الحملات بصورة مستمرة.</li>
+                        <li>• اختبار الإعلانات والجمهور والكلمات المفتاحية.</li>
+                        <li>• إيقاف الإعلانات ضعيفة الأداء.</li>
+                        <li>• تحسين تكلفة الحصول على العميل المحتمل.</li>
+                        <li>• مراجعة توزيع الميزانية بين المنصات.</li>
+                        <li>• تقييم جودة الاستفسارات بالتنسيق مع فريق المبيعات.</li>
+                    </ul>
+                </div>
+                <div class="inner-item p-6 rounded-2xl shadow">
+                    <span class="text-amber-400 font-bold text-xs uppercase tracking-wider block mb-1">المرحلة الرابعة</span>
+                    <h3 class="font-bold text-white text-lg mb-3">التقييم والتوصيات</h3>
+                    <ul class="space-y-2 text-slate-200 text-sm">
+                        <li>• إعداد تقرير شامل لأداء الحملات.</li>
+                        <li>• مقارنة جودة العملاء المحتملين بين المنصات.</li>
+                        <li>• تحديد الخدمات الأعلى جذباً للعملاء.</li>
+                        <li>• تحليل تكلفة الاستفسار والفرص البيعية.</li>
+                        <li>• تحديد القنوات الإعلانية الأكثر كفاءة.</li>
+                        <li>• وضع توصيات وخطة تطوير للشهر التالي.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: Timeline -->
+        <section class="content-card p-8 rounded-3xl shadow-xl motion-fade-in">
+            <h2 class="text-2xl font-black text-amber-400 mb-6 pb-2 border-b-2 border-amber-500/50 inline-block">سابعاً: الجدول الزمني للتنفيذ</h2>
+            <div class="space-y-6">
+                <div class="inner-item p-6 rounded-2xl accent-border-yellow shadow">
+                    <h3 class="font-bold text-amber-300 text-lg mb-2">الأسبوع الأول: التحليل والتجهيز</h3>
+                    <ul class="space-y-1.5 text-slate-200 text-sm">
+                        <li>• مراجعة الموقع والحسابات الإعلانية.</li>
+                        <li>• تحليل الخدمات والجمهور والكلمات المفتاحية.</li>
+                        <li>• تجهيز أدوات التتبع والتحليل.</li>
+                        <li>• بناء هيكل الحملات الإعلانية.</li>
+                    </ul>
+                </div>
+                <div class="inner-item p-6 rounded-2xl accent-border-yellow shadow">
+                    <h3 class="font-bold text-amber-300 text-lg mb-2">الأسبوع الثاني: الإطلاق والتشغيل</h3>
+                    <ul class="space-y-1.5 text-slate-200 text-sm">
+                        <li>• إطلاق حملات Google Ads.</li>
+                        <li>• إطلاق حملات Instagram.</li>
+                        <li>• بدء اختبار حملات TikTok.</li>
+                        <li>• متابعة المؤشرات الأولية والتأكد من سلامة التتبع.</li>
+                    </ul>
+                </div>
+                <div class="inner-item p-6 rounded-2xl accent-border-yellow shadow">
+                    <h3 class="font-bold text-amber-300 text-lg mb-2">الأسبوع الثالث: الاختبار والتحسين</h3>
+                    <ul class="space-y-1.5 text-slate-200 text-sm">
+                        <li>• تحليل أداء الحملات والإعلانات.</li>
+                        <li>• اختبار صيغ إعلانية وجماهير مختلفة.</li>
+                        <li>• تحسين الاستهداف والكلمات المفتاحية.</li>
+                        <li>• مراجعة جودة العملاء المحتملين.</li>
+                    </ul>
+                </div>
+                <div class="inner-item p-6 rounded-2xl accent-border-yellow shadow">
+                    <h3 class="font-bold text-amber-300 text-lg mb-2">الأسبوع الرابع: التقييم والتطوير</h3>
+                    <ul class="space-y-1.5 text-slate-200 text-sm">
+                        <li>• تحسين الحملات وفق البيانات المتاحة.</li>
+                        <li>• مراجعة كفاءة توزيع الميزانية.</li>
+                        <li>• تحليل نتائج كل منصة.</li>
+                        <li>• إعداد التقرير النهائي والتوصيات للشهر التالي.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 8: KPIs -->
+        <section class="content-card p-8 rounded-3xl shadow-xl motion-fade-in">
+            <h2 class="text-2xl font-black text-amber-400 mb-4 pb-2 border-b-2 border-amber-500/50 inline-block">ثامناً: مؤشرات قياس الأداء (KPIs)</h2>
+            <p class="text-slate-300 mb-4">سيتم تقييم أداء الخطة بناءً على مجموعة من المؤشرات التي تقيس النتائج التسويقية والبيعية، وتشمل:</p>
+            <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 text-slate-200 mb-6">
+                <li class="inner-item p-3.5 rounded-xl">• إجمالي عدد العملاء المحتملين.</li>
+                <li class="inner-item p-3.5 rounded-xl">• عدد طلبات عروض الأسعار.</li>
+                <li class="inner-item p-3.5 rounded-xl">• تكلفة الحصول على العميل المحتمل (CPL).</li>
+                <li class="inner-item p-3.5 rounded-xl">• نسبة التحويل من زيارة الموقع إلى استفسار.</li>
+                <li class="inner-item p-3.5 rounded-xl">• عدد المكالمات ومحادثات WhatsApp.</li>
+                <li class="inner-item p-3.5 rounded-xl">• جودة العملاء المحتملين ومدى جديتهم.</li>
+                <li class="inner-item p-3.5 rounded-xl md:col-span-2">• عدد الفرص البيعية التي انتقلت إلى مرحلة تقديم عرض سعر.</li>
+                <li class="inner-item p-3.5 rounded-xl md:col-span-2">• أداء كل قناة إعلانية مقارنة بالميزانية المخصصة لها.</li>
+            </ul>
+            <p class="text-amber-200/80 text-sm italic">
+                لن يتم الاعتماد على عدد الاستفسارات وحده في تقييم النجاح، بل سيتم التركيز على جودة العملاء المحتملين ومدى قابليتهم للتحول إلى فرص تعاقد فعلية.
+            </p>
+        </section>
+
+        <!-- Section 9: Requirements -->
+        <section class="content-card p-8 rounded-3xl shadow-xl motion-fade-in">
+            <h2 class="text-2xl font-black text-amber-400 mb-4 pb-2 border-b-2 border-amber-500/50 inline-block">تاسعاً: متطلبات بدء العمل</h2>
+            <p class="text-slate-300 mb-4">لضمان تنفيذ الخطة بكفاءة، نحتاج إلى توفير المتطلبات التالية:</p>
+            <ul class="space-y-2.5 text-slate-200">
+                <li class="inner-item p-3 rounded-xl">✓ صلاحيات الوصول إلى حساب Google Ads الحالي.</li>
+                <li class="inner-item p-3 rounded-xl">✓ صلاحيات الموقع الإلكتروني وGoogle Analytics وGoogle Tag Manager، إن كانت موجودة.</li>
+                <li class="inner-item p-3 rounded-xl">✓ صلاحيات حسابات Instagram وMeta Business وTikTok.</li>
+                <li class="inner-item p-3 rounded-xl">✓ صور وفيديوهات الأعمال والمشاريع السابقة.</li>
+                <li class="inner-item p-3 rounded-xl">✓ تحديد المدن والمناطق التي تقدم الشركة خدماتها فيها.</li>
+                <li class="inner-item p-3 rounded-xl">✓ تحديد الخدمات ذات الأولوية ومتوسط قيمة التعاقد المستهدف.</li>
+                <li class="inner-item p-3 rounded-xl">✓ تحديد آلية استقبال ومتابعة العملاء المحتملين.</li>
+                <li class="inner-item p-3 rounded-xl">✓ توفير شخص مسؤول عن متابعة الاستفسارات والتواصل مع العملاء المحتملين.</li>
+            </ul>
+        </section>
+
+        <!-- Section 10: Expected Results -->
+        <section class="content-card p-8 rounded-3xl shadow-xl motion-fade-in">
+            <h2 class="text-2xl font-black text-amber-400 mb-4 pb-2 border-b-2 border-amber-500/50 inline-block">عاشراً: النتائج المتوقعة</h2>
+            <p class="text-slate-300 mb-4">من خلال تنفيذ هذه الخطة، تعمل Digital Craft على تأسيس منظومة إعلانية متكاملة تساعد شركة كاسب على:</p>
+            <ul class="space-y-2.5 text-slate-200 mb-8">
+                <li class="inner-item p-3.5 rounded-xl">• تنويع مصادر الحصول على العملاء المحتملين.</li>
+                <li class="inner-item p-3.5 rounded-xl">• تعزيز حضور الشركة في السوق الرقمي.</li>
+                <li class="inner-item p-3.5 rounded-xl">• الوصول إلى الفئات الأكثر اهتماماً بخدمات المقاولات.</li>
+                <li class="inner-item p-3.5 rounded-xl">• تحسين كفاءة الإنفاق الإعلاني.</li>
+                <li class="inner-item p-3.5 rounded-xl">• قياس أداء كل قناة إعلانية بصورة واضحة.</li>
+                <li class="inner-item p-3.5 rounded-xl">• بناء قاعدة بيانات للعملاء المحتملين والفرص البيعية.</li>
+                <li class="inner-item p-3.5 rounded-xl">• اتخاذ قرارات تسويقية مستقبلية بناءً على نتائج فعلية وبيانات قابلة للقياس.</li>
+            </ul>
+
+            <div class="border-t border-amber-500/30 pt-6">
+                <h3 class="font-black text-amber-400 text-lg mb-2">Digital Craft</h3>
+                <p class="text-slate-300 text-sm leading-relaxed">
+                    نعمل على بناء منظومة تسويقية تعتمد على التخطيط والتحليل والتحسين المستمر، بهدف الوصول إلى العملاء المناسبين وتحويل الاهتمام بالخدمات إلى فرص أعمال حقيقية.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Bottom-Right Glowing Logo (Curved square, glowing, animated, linking to website) -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <a href="https://dg-craft.com/index.html" target="_blank" class="block animate-glow rounded-3xl overflow-hidden w-16 h-16 md:w-20 md:h-20 bg-white border-2 border-amber-400 shadow-2xl p-1 transition-transform hover:scale-110" title="زيارة موقع Digital Craft">
+            <img src="https://i.ibb.co/M5k30hGM/b3d88775-4dd0-4ccf-ae34-ae20c23ff8da.jpg" alt="Digital Craft Logo" class="w-full h-full object-cover rounded-2xl" onerror="this.src='https://placehold.co/100x100/0b253a/ffffff?text=DC'" />
+        </a>
+    </div>
+
+</body>
+</html>
